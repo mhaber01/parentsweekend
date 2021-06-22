@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<title>Parent's Weekend 2021</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href = "ScallopShell.png" type = "image/icon" rel = "shortcut icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+@font-face {
+  font-family: "AntiqueCherry";
+  src: url("AntiqueCherry.ttf")
+}
+
+@font-face {
+  font-family: "neuton";
+  src: url("neuton/Neuton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "woodford-bourne";
+  src: url("woodford-bourne/WoodfordBournePRO-Bold.otf");
+}
+
+@font-face {
+  font-family: "lora-regular";
+  src: url("Lora-Regular.ttf");
+}
+
+@font-face {
+  font-family: "retroking";
+  src: url("Retroking.ttf");
+}
+
+@font-face {
+  font-family: "AmostelySignature";
+  src: url("AmostelySignature.ttf");
+}
+
+body, h1, h2, h4, h5, h6 {
+  font-family: woodford-bourne;
+  color: #990000;
+}
+
+p, li {
+  font-family: lora-regular;
+  font-size: 16px;
+  color: #1a0000;
+}
+
+body, html {
+    height: 100%;
+    color: #990000;
+    /*background-color: #EEF1F2;*/
+    line-height: 1.8;
+    /*scroll-behavior: smooth;*/
+    font-family: "neuton";
+}
+
+* {box-sizing: border-box;}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-family: woodford-bourne;
+	font-size: 30px;
+}
+
+.subtitle {
+  color: #1a0000;
+  font-size: 20px;
+  font-family: woodford-bourne;
+  font-weight: inherit;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .sectionTitle {
+    font-size: 50px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .sectionTitle {
+    font-size: 40px;
+  }
+}
+
+/* Skinny banner */
+#top_banner {
+  position: absolute;
+  background-color: #1a0000;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  z-index: 99;
+}
+
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.8s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  z-index: 99;
+}
+
+/* Style the logo */
+#navbar #logo{
+  font-size: 90px;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 10px 10px !important;
+  }
+}
+
+.button-title{
+  display: block !important;
+  text-decoration: none;
+  cursor:pointer;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  /*padding-left: 65px;*/
+  text-align: center;
+}
+
+.button{
+  font-family: woodford-bourne;
+  border:none;
+  display:inline-block;
+  padding:8px 40px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  font-size: 18px;
+  color: #1a0000;
+}
+
+.button:hover {
+  color: #990000;
+}
+
+.booknow{
+  display:inline-block;
+  text-decoration:none;
+  font-family: woodford-bourne;
+  color: #1a0000;
+  font-size:15px;
+  font-weight:600;
+  line-height:100%;
+  border: none;
+  -webkit-appearance: inherit;
+  background-color: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select:none;
+  -webkit-font-smoothing:antialiased!important;
+  cursor:pointer;
+}
+
+.booknow:hover{
+  border-bottom: 2px solid currentColor;
+  color: #990000;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a.url:hover{
+  border-bottom: 2px solid currentColor;
+  color: #990000;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+	display: inline-block;
+	width: 300px;
+	height: 3px;
+	margin: 10px;
+  overflow: hidden;
+  background-color: #1a0000;
+}
+
+.center-row {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.row {
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: top; /* Safari 7.0+ */
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: top;
+}
+
+.center-row-registry {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.row-registry {
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: top; /* Safari 7.0+ */
+  display: inline-flex;
+  display: block;
+}
+
+.button-registry{
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.button-registry:hover {
+  opacity: 0.5;
+}
+
+.w3-bottombar{
+  border-bottom:6px solid #1a0000!important}
+
+.main-color{
+  color:#fff!important;
+  background-color:#1a0000!important;
+}
+
+.main-border-color {
+  border-color:#1a0000!important;
+}
+
+.main-footer-colors {
+    color:black;
+    background-color: #f1f1f1!important;
+}
+
+.main-hover-color:hover{
+  color: #1a0000!important;
+  background-color: #FFFFFF!important;
+}
+
+.main-footer-hover-opacity:hover{
+  color:#990000; 
+  opacity:1;
+}
+
+.container {
+  margin-left: 33%;
+}
+
+.navy-background{
+  color:#fff!important;
+  background-color:#1a0000!important;
+}
+
+.thingstodo_container {
+  position: relative;
+  width: 32%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width:275px;
+  height:275px;
+  object-fit:cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thingstodo_container:hover .image {
+  opacity: 0.3;
+}
+
+.thingstodo_container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #1a0000;
+  font-size: 24px;
+}
+
+.visit {
+  font-size: 20px;
+  margin-top: -18px;
+}
+
+.vl {
+  border-left: 3px solid #1a0000;
+  height: 250px;
+  position: absolute;
+  margin-right: 20px;
+  margin-top: 35px;
+}
+
+.vl_long {
+  border-left: 3px solid #1a0000;
+  height: 500px;
+  position: absolute;
+  margin-right: 20px;
+  margin-top: 35px;
+}
+
+.hl {
+  border-bottom: 3px solid #1a0000;
+  width: 100%;
+  margin: auto;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1{
+  background-attachment: fixed;
+  background-position: center top 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-2{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-3{
+  background-attachment: fixed;
+  background-position: center top 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-4 {
+  background-attachment: fixed;
+  background-position: center top left 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-5 {
+  background-attachment: fixed;
+  background-position: center top 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-6 {
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lighthouse {
+  background-attachment: fixed;
+  background-position: right top 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image */
+.bgimg-1 {
+    background-image: url('Pictures/VermontBus.JPG');
+    min-height: 100%;
+}
+
+/* Second image */
+.bgimg-2 {
+    background-image: url("Pictures/Beerlympics.JPG");
+    min-height: 100%;
+}
+
+/* Slides */
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .lighthouse {
+        background-attachment: scroll;
+    }
+}
+
+.itinerary {
+  display: none;
+}
+
+.w3-wide {letter-spacing: 10px;}
+/*.w3-hover-opacity {cursor: pointer;}
+
+/* Style the navigation menu */
+#topnav {
+  overflow: hidden;
+  background-color: white;
+  padding: 12px 15px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.8s; /* Adds a transition effect when the padding is decreased */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  overflow: hidden;
+  position: relative;
+}
+
+#topnav #logo2 {
+  font-size: 50px;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 580px) {
+  #topnav {
+    padding: 10px 10px !important;
+  }
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+#topnav a.button {
+  color: #1a0000;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/* Style the hamburger menu */
+#topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-center">
+
+    <!-- Title -->
+    <div id="navbar" class="w3-hide-small w3-hide-medium">
+      <a href="#home">
+    	  <h2 id="logo" class="button-title" style="font-family: retroking; font-weight: inherit;">Parents' Weekend</h2>
+      </a>
+      <!-- <h2 class="button-title subtitle">Saturday, July 10, 2021</h2> -->
+    
+
+    <!-- Right 
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    -->
+
+      <a href="#theweekend" class="w3-hide-small w3-hide-medium button w3-center">THE WEEKEND</a>
+      <a href="#accommodations" class="w3-hide-small w3-hide-medium button w3-center">ACCOMMODATIONS</a>
+      <a href="#transportation" class="w3-hide-small w3-hide-medium button w3-center">TRANSPORTATION</a>
+      <a href="https://www.eventbrite.com/e/parents-weekend-2021-tickets-160707302869" target="_blank" class="w3-hide-small w3-hide-medium button w3-center">RSVP</a>
+    </div>
+
+    <!--Navbar on small screens-->
+    <!-- Top Navigation Menu -->
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+      <div id="topnav" class="w3-hide-large">
+        <a href="#home" id="logo2" class="active" style="font-family:retroking; font-size: 50px; font-weight: inherit;">Parents' Weekend</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" class="w3-center" onclick="toggleFunction()">
+          <br>
+          <a href="#theweekend" class="button">THE WEEKEND</a><br>
+          <a href="#accommodations" class="button">ACCOMMODATIONS</a><br>
+          <a href="#transportation" class="button">TRANSPORTATION</a><br>
+          <a href="https://www.eventbrite.com/e/parents-weekend-2021-tickets-160707302869" target="_blank" class="button">RSVP</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon button" style="font-size: 35px;" onclick="toggleFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- First Parallax Image with Justin & Liz Text -->
+<div class="bgimg-1 w3-display-container w3-center" id="home">
+</div>
+
+<!-- The Weekened - Big Screen -->
+<div class="lighthouse">
+  <div class="w3-content w3-center w3-container w3-padding-64 w3-hide-small" id="theweekend">
+      <div style="padding-top: 8%; padding-bottom: 12%;">
+        <h2 class="w3-center" style="font-family: woodford-bourne; font-size: 30px; color: #1a0000;">IT TAKES THE BEST TO RAISE THE BEST</h2>
+        <div class="w3-center" style="margin-top: 30px;">
+          <img src="koozie.PNG" alt="Parents Weekend" style="height: 500px; width: 550px;">
+        </div>
+        <!-- <h2 class="w3-center" style="font-family:AntiqueCherry; margin-top: 20px; font-size: 130px;">Parents' Weekend</h2> -->
+        <h2 class="w3-center" style="font-family: woodford-bourne; margin-top:40px; font-size: 40px; color: #1a0000;">SATURDAY, JULY 10 - 11, 2021 @ 2:00 PM</h2>
+        <h3 class="w3-center" style="margin-top:-10px; font-size: 20px; font-family: lora-regular; color: #1a0000;">V A L E R I E &nbsp;&nbsp; L A C E Y ' S &nbsp;&nbsp; ( A K A &nbsp;&nbsp; A D A M ' S &nbsp;&nbsp; M O M ' S ) &nbsp;&nbsp; H O U S E</h3>
+        <h3 class="w3-center" style="margin-top:-20px; margin-bottom:40px;  font-size: 30px; font-family: lora-regular; color: #1a0000;"><a href="https://goo.gl/maps/1WrK897ARiT3yzaY6" target="_blank" class="url">23 Welling Avenue, Warwick, NY 10990</a></h3>
+        <hr>
+        <h2 class="w3-center" style="font-family: woodford-bourne; margin-top:40px; font-size: 20px; color: #1a0000;">RAIN DATE: SUNDAY, JULY 11, 2021 @ 2:00 PM</h2>
+        <hr style="margin-top: 40px;">
+        <h3 class="w3-center" style="margin-top:40px; font-size: 22px; font-family: lora-regular; color: #1a0000;">
+          Time for a pool party to celebrate our awesome parents!<br>
+          Good food and drinks will be provided by yours truly.<br>
+          So, don't even <b>think</b> about bringing anything (except a bathing suit)!<br>
+          <br>
+          Looking forward to seeing everyone!
+          <br>
+          <h2 class="w3-center" style="font-family: woodford-bourne; margin-top:40px; font-size: 20px; color: #1a0000;">*cough*<br>You might want to start warming up your Quarters skills...<br>*cough cough*</h2>
+        </h3>
+      </div>
+  </div>
+
+  <!-- The Weekend - Small Screen-->
+  <div class="w3-content w3-container w3-padding-64 w3-hide-medium w3-hide-large" id="theweekend">
+    <div style="padding-top: 8%; padding-bottom: 12%;">
+      <h2 class="w3-center" style="font-family: woodford-bourne; font-size: 30px; color: #1a0000;">IT TAKES THE BEST TO RAISE THE BEST</h2>
+      <div class="w3-center" style="margin-top: 30px;">
+        <img src="koozie.PNG" alt="Parents Weekend" style="height: 450px; width: 500px;">
+      </div>
+      <!-- <h2 class="w3-center" style="font-family:AntiqueCherry; margin-top: 20px; font-size: 130px;">Parents' Weekend</h2> -->
+      <h2 class="w3-center" style="font-family: woodford-bourne; margin-top:40px; font-size: 40px; color: #1a0000;">SATURDAY, JULY 10, 2021 @ 2:00 PM</h2>
+      <h3 class="w3-center" style="margin-top:-20px; font-size: 20px; font-family: lora-regular; color: #1a0000;">V A L E R I E &nbsp;&nbsp; L A C E Y ' S &nbsp;&nbsp; ( A K A &nbsp;&nbsp; A D A M ' S &nbsp;&nbsp; M O M ' S ) &nbsp;&nbsp; H O U S E</h3>
+      <h3 class="w3-center" style="margin-top:-20px; margin-bottom:40px;  font-size: 30px; font-family: lora-regular; color: #1a0000;"><a href="https://goo.gl/maps/1WrK897ARiT3yzaY6" target="_blank" class="url">23 Welling Avenue, Warwick, NY 10990</a></h3>
+      <hr>
+      <h2 class="w3-center" style="font-family: woodford-bourne; margin-top:40px; font-size: 20px; color: #1a0000;">RAIN DATE: SUNDAY, JULY 11, 2021 @ 2:00 PM</h2>
+      <hr style="margin-top: 40px;">
+      <h3 class="w3-center" style="margin-top:40px; font-size: 22px; font-family: lora-regular; color: #1a0000;">
+        Time for a pool party to celebrate our awesome parents!<br>
+        Good food and drinks will be provided by yours truly.<br>
+        So, don't even think about bringing anything except a bathing suit!<br>
+        <br>
+        Looking forward to seeing everyone!
+        <br>
+        <h2 class="w3-center" style="font-family: woodford-bourne; margin-top:40px; font-size: 20px; color: #1a0000;">*cough*<br>You might want to start warming up your Quarters skills...<br>*cough cough*</h2>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Your Stay Text -->
+<div class="bgimg-2 w3-display-container w3-center">
+</div>
+
+<!-- Accommodations -->
+<div class="w3-content w3-container w3-padding-64" id="accommodations">
+
+  <div class="w3-center w3-hide-small" style="margin-top: 80px;">
+    <h3 style="margin-bottom:-15px; font-family:retroking; font-size: 50px;">Warwick Area Accommodations</h3>
+  </div>
+
+  <div class="w3-center w3-hide-medium w3-hide-large">
+    <h3 style="margin-bottom:-20px; font-family:retroking; font-size: 50px;">Accommodations</h3>
+  </div>
+
+  <div class="w3-center w3-hide-small">
+    <div style="color:#1a0000; display: block; margin: auto;">
+      <h3 style="margin-bottom:-15px; font-size: 22px;">Recommendations by Valerie Lacey</h3>
+      <p class="w3-opacity" style="margin-bottom:30px;"><em>Click on an accomodation name to visit their website!</em></p>
+    </div>
+  </div>
+
+  <div class="w3-center w3-hide-medium w3-hide-large">
+    <div style="color:#1a0000; width:100%; overflow:auto; margin-bottom: 20px;">
+      <h3 style="font-size: 20px; margin-bottom:-20px;">Recommendations by Valerie Lacey</h3>
+      <p class="w3-opacity"><em>Tap on an accomodation name to visit their website!</em></p>
+    </div>
+  </div>
+
+  <!-- Big Screen -->
+
+  <div class="w3-container w3-center w3-hide-small">
+
+    <h3>Bed & Breakfasts</h3>
+    <div class="center-row">
+      <div class="row"><br>
+        <div class="w3-container" style="height: 325px; width: 40%; margin-right: 40px;">
+          <h3 style="font-size: 20px;"><a href="https://www.wvbedandbreakfast.com/" target="_blank" class="url">Warwick Valley B&B</a></h3>
+          <p class="w3-opacity"><em>Walk or drive: 0.8 miles away;<br>4 min. drive or nice 17 min. walk through the village center.</em></p>
+          <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
+            <p>Owner, Loretta.<br>If you call, tell her you're visiting Valerie Lacey. I've been in here. Lovely. I've had a friend stay and she loved it.</p>
+          </div>
+        </div>
+
+        <div class="vl"></div>
+
+        <div class="w3-container" style="height: 325px; width: 40%;">
+          <h3 style="font-size: 20px;"><a href="http://www.sleepyvalleyinn.com/" target="_blank" class="url">Sleepy Valley Inn</a></h3>
+          <p class="w3-opacity"><em>Not walkable. 2.6 miles away; 8 min. drive.</em></p>
+          <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
+            <p>Owners, John & Peggy.<br>If you call, tell them you're visiting Valerie Lacey. I've never been in here. Can't attest, but John and Peggy are friends, and also own Yesterday's Restaurant in the village.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-row">
+      <div class="row"><br>
+        <div class="w3-container" style="height: 175px; width: 60%;">
+          <h3 style="font-size: 20px;"><a href="http://chateauhathorn.com/" target="_blank" class="url">Chateau Hathorn</a></h3>
+          <p class="w3-opacity"><em>3 minute drive</em></p>
+          <div style="margin-top: -15px; height:200px; width:100%; overflow:auto;">
+            <p>I've never been in the guest rooms, but have dined here. Excellent food.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 50px;">AirBnB & Vrbo</h3>
+    <div class="center-row">
+      <div class="row"><br>
+        <div class="w3-container" style="height: 100%; width: 60%;">
+          <h3 style="font-size: 20px;"><a href="https://goo.gl/maps/25tjw7oAFiZ1Z1bw8" target="_blank" class="url">Search Warwick, NY</a></h3>
+          <p class="w3-opacity"><em>Zoom the map in to Welling Avenue, Warwick, NY, to see how close any listing is to the house.</em></p>
+          <div style="margin-top: -15px; height:100%; width:100%; overflow:auto;">
+            <p>Here are just a few that are in walking distance:</p>
+            <p><b>"The Warwick View - Top Floor Flat"</b> looks pretty nice and is walking distance to 23 Welling Ave.</p>
+            <p><b>"Warwick Village Deli House Down"</b> is within walking distance from Welling Ave. Appears on the map to be right around the corner.</p>
+            <p><b>"Warwick Getaway in the Heart of the Village"</b> is also within walking distance of Welling Ave.</p>
+            <p><b>"The Cottage at Millpond Falls"</b> looks fabulous and you'll likely pass it on your way in. Very short drive to the house.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 50px;">Hotels</h3>
+    <div class="center-row">
+      <div class="row"><br>
+        <div class="w3-container" style="height: 175px; width: 100%;">
+          <h3 style="font-size: 20px;"><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/chester/hpnes/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-HPNES" target="_blank" class="url">Holiday Inn, Chester, NY</a></h3>
+          <p class="w3-opacity"><em>10 miles, 20 min drive</em></p>
+          <div style="margin-top: -15px; height:200px; width:100%; overflow:auto;">
+            <p>Hotel, motel, Holiday Inn!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="center-row">
+      <div class="row"><br>
+        <div class="w3-container" style="height: 100%; width: 100%;">
+          <h3 style="font-size: 20px;">Note: I do not recommend Warwick Motel & Suites!</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-center w3-hide-small" style="margin-top: 80px;" id="transportation">
+      <h3 style="margin-bottom:-15px; font-family:retroking; font-size: 50px;">Transportation</h3>
+    </div>
+
+    <div class="center-row">
+      <div class="row"><br>
+        <div class="w3-container" style="height: 150px; width: 100%;">
+          <h3 style="font-size: 20px;">Taxi or Group Arrangement</h3>
+          <div style="margin-top: -15px; height:200px; width:100%; overflow:auto;">
+            <p>There are several local taxi services that can be called.<br>Or, we can make a group arrangement with a local service, depending on where everyone winds up staying.<br>Uber & Lyft are tough to get around here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Small Screen -->
+
+  <div class="w3-container w3-center w3-hide-medium w3-hide-large">
+
+    <h3>Bed & Breakfasts</h3>
+    <div class="w3-container" style="height: 325px; width: 100%;">
+      <h3 style="font-size: 20px;"><a href="https://www.wvbedandbreakfast.com/" target="_blank" class="url">Warwick Valley B&B</a></h3>
+      <p class="w3-opacity"><em>Walk or drive: 0.8 miles away;<br>4 min. drive or nice 17 min. walk through the village center.</em></p>
+      <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
+        <p>Owner, Loretta.<br>If you call, tell her you're visiting Valerie Lacey. I've been in here. Lovely. I've had a friend stay and she loved it.</p>
+      </div>
+    </div>
+
+    <div class="w3-container" style="height: 325px; width: 100%;">
+      <h3 style="font-size: 20px;"><a href="http://www.sleepyvalleyinn.com/" target="_blank" class="url">Sleepy Valley Inn</a></h3>
+      <p class="w3-opacity"><em>Not walkable. 2.6 miles away; 8 min. drive.</em></p>
+      <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
+        <p>Owners, John & Peggy.<br>If you call, tell them you're visiting Valerie Lacey. I've never been in here. Can't attest, but John and Peggy are friends, and also own Yesterday's Restaurant in the village.</p>
+      </div>
+    </div>
+
+    <div class="w3-container" style="height: 250px; width: 100%;">
+      <h3 style="font-size: 20px;"><a href="http://chateauhathorn.com/" target="_blank" class="url">Chateau Hathorn</a></h3>
+      <p class="w3-opacity"><em>3 minute drive</em></p>
+      <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
+        <p>I've never been in the guest rooms, but have dined here. Excellent food.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 style="margin-top: 50px;">AirBnB & Vrbo</h3>
+    <div class="w3-container" style="height: 100%; width: 100%;">
+      <h3 style="font-size: 20px;"><a href="https://goo.gl/maps/25tjw7oAFiZ1Z1bw8" target="_blank" class="url">Search Warwick, NY</a></h3>
+      <p class="w3-opacity"><em>Zoom the map in to Welling Avenue, Warwick, NY, to see how close any listing is to the house.</em></p>
+      <div style="margin-top: -15px; height:100%; width:100%; overflow:auto;">
+        <p>Here are just a few that are in walking distance:</p>
+        <p><b>"The Warwick View - Top Floor Flat"</b> looks pretty nice and is walking distance to 23 Welling Ave.</p>
+        <p><b>"Warwick Village Deli House Down"</b> is within walking distance from Welling Ave. Appears on the map to be right around the corner.</p>
+        <p><b>"Warwick Getaway in the Heart of the Village"</b> is also within walking distance of Welling Ave.</p>
+        <p><b>"The Cottage at Millpond Falls"</b> looks fabulous and you'll likely pass it on your way in. Very short drive to the house.</p>
+      </div>
+    </div>
+
+    <hr style="margin-top: 50px;">
+
+    <h3 style="margin-top: 50px;">Hotels</h3>
+    <div class="w3-container" style="height: 200px; width: 100%;">
+      <h3 style="font-size: 20px;"><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/chester/hpnes/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-HPNES" target="_blank" class="url">Holiday Inn, Chester, NY</a></h3>
+      <p class="w3-opacity"><em>10 miles, 20 min drive</em></p>
+      <div style="margin-top: -15px; height:200px; width:100%; overflow:auto;">
+        <p>Hotel, motel, Holiday Inn!</p>
+      </div>
+    </div>
+
+    <div class="w3-container" style="height: 100px; width: 100%; margin-top: 10px;">
+      <h3 style="font-size: 20px;">Note: I do not recommend Warwick Motel & Suites!</h3>
+    </div>
+
+    <hr style="margin-top: 50px;">
+
+    <div class="w3-center" style="margin-top: 50px;" id="transportation">
+      <h3 style="margin-bottom:-15px; font-family:retroking; font-size: 50px;">Transportation</h3>
+    </div>
+    
+    <div class="w3-container" style="height: 200px; width: 100%;">
+      <h3 style="font-size: 20px;">Taxi or Group Arrangement</h3>
+      <div style="margin-top: -15px; height:200px; width:100%; overflow:auto;">
+        <p>There are several local taxi services that can be called.<br>Or, we can make a group arrangement with a local service, depending on where everyone winds up staying.<br>Uber & Lyft are tough to get around here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <a href="#home" class="button">
+    <i class="fa fa-arrow-up w3-margin-right"></i>
+    To the top
+  </a>
+
+  <br>
+
+  <div>
+    <p style="font-size: 16px; display: inline-block; vertical-align: center;">Made by</p>
+    <h3 style="font-family: AmostelySignature; font-size: 20px; display: inline-block; vertical-align: center;">
+      Megan Haber
+    </h3>
+  </div>
+</footer>
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "10px 20px";
+    document.getElementById("topnav").style.padding = "10px 20px";
+    document.getElementById("logo").style.fontSize = "60px";
+    document.getElementById("logo2").style.fontSize = "30px";
+    document.getElementById("navbar").style.borderBottom = "2px solid #990000";
+    document.getElementById("topnav").style.borderBottom = "2px solid #990000";
+  } else {
+    document.getElementById("navbar").style.padding = "12px 20px";
+    document.getElementById("topnav").style.padding = "12px 20px";
+    document.getElementById("logo").style.fontSize = "90px";
+    document.getElementById("logo2").style.fontSize = "50px";
+    document.getElementById("navbar").style.borderBottom = "none";
+    document.getElementById("topnav").style.borderBottom = "none";
+  }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function unshowNavigationMenu() {
+
+}
+
+// Tabbed Menu
+function openMenu(evt, itineraryDate) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("itinerary");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" navy-background", "");
+  }
+  document.getElementById(itineraryDate).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " navy-background";
+}
+document.getElementById("myLink").click();
+
+</script>
+
+</body>
+</html>
+
